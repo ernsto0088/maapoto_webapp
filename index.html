@@ -31,6 +31,11 @@
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     });
 
+    var Esritopo=L.tileLayer('https://server.arcgisonline.com/arcgis/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+    maxZoom: 19,
+    attribution: 'ESRI Topo'
+    });
+
     var googlSatellite=L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
     maxZoom: 19,
     attribution: 'Google'
@@ -39,7 +44,8 @@
     // Create a layer control
         var baseMaps = {
             "OpenStreetMap": OSM_Map, 
-            "Google Satellite": googlSatellite
+            "Google Satellite": googlSatellite,
+            "ESRI Topo": Esritopo
         };
 
     var geojsonLayer; // Declare globally
