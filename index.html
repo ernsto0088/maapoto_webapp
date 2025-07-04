@@ -41,7 +41,24 @@
             "OpenStreetMap": OSM_Map, 
             "Google Satellite": googlSatellite
         };
-        L.control.layers(baseMaps).addTo(map);
+
+    var geojsonLayer; // Declare globally
+        fetch('Kesin.geojson')
+            .then(response => response.json())
+            .then(data => {
+            geojsonLayer = L.geoJSON(data);
+            // Add to map or not, depending on default visibility
+            geojsonLayer.addTo(map);
+
+        // Add to layer control
+        var overlayMaps = {
+            "GeoJSON Layer": geojsonLayer
+            };
+        L.control.layers(baseMaps, overlayMaps).addTo(map);
+        });
+
+
+
 
 
     </script>
