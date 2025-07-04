@@ -24,7 +24,7 @@
     </style>
 
     <script>
-        var map = L.map('map').setView([-8.6, 125.6], 13);
+        var map = L.map('map').setView([-8.4, 127.0], 13);
 
     var OSM_Map=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -43,19 +43,29 @@
         };
 
     var geojsonLayer; // Declare globally
-        fetch('Kesin.geojson')
-            .then(response => response.json())
-            .then(data => {
-            geojsonLayer = L.geoJSON(data);
-            // Add to map or not, depending on default visibility
-            geojsonLayer.addTo(map);
+    fetch('Kesin.geojson')
+    .then(response => response.json())
+    .then(data => {
+        geojsonLayer = L.geoJSON(data, {
+            onEachFeature: function (feature, layer) {
+                // Customize the popup content as needed
+                if (feature.properties) {
+                    let popupContent = "";
+                    for (let key in feature.properties) {
+                        popupContent += `<strong>${key}:</strong> ${feature.properties[key]}<br>`;
+                    }
+                    layer.bindPopup(popupContent);
+                }
+            }
+        });
+        geojsonLayer.addTo(map);
 
         // Add to layer control
         var overlayMaps = {
             "GeoJSON Layer": geojsonLayer
-            };
+        };
         L.control.layers(baseMaps, overlayMaps).addTo(map);
-        });
+    });
 
 
 
