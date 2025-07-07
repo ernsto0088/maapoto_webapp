@@ -71,15 +71,20 @@
                     fillOpacity: 0.8
                 });
             },
-            onEachFeature: function (feature, layer) {
-                if (feature.properties) {
-                    let popupContent = "";
-                    for (let key in feature.properties) {
-                        popupContent += `<strong>${key}:</strong> ${feature.properties[key]}<br>`;
-                    }
-                    layer.bindPopup(popupContent);
+        onEachFeature: function (feature, layer) {
+            if (feature.properties) {
+            let popupContent = "";
+            for (let key in feature.properties) {
+                // If the property is Photo and not null, show the image
+                if (key === "Photo" && feature.properties[key]) {
+                popupContent += `<strong>${key}:</strong><br><img src="${feature.properties[key]}" alt="Photo" style="max-width:150px;max-height:150px;"><br>`;
+                 } else {
+                    popupContent += `<strong>${key}:</strong> ${feature.properties[key]}<br>`;
+                 }
                 }
-            }
+        layer.bindPopup(popupContent);
+    }
+}
         });
         geojsonLayer.addTo(map);
 

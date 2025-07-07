@@ -23,7 +23,7 @@
 { "type": "Feature", "properties": { "id": 17, "Name": "Lata O'O pairara", "Dist": "Kesin", "Desc": null, "Photo": null }, "geometry": { "type": "Point", "coordinates": [ 126.948055, -8.430325 ] } },
 { "type": "Feature", "properties": { "id": 18, "Name": "Lata Pairara", "Dist": "Kesin", "Desc": null, "Photo": null }, "geometry": { "type": "Point", "coordinates": [ 126.947495, -8.430166666666667 ] } },
 { "type": "Feature", "properties": { "id": 19, "Name": "Pairara", "Dist": "Kesin", "Desc": null, "Photo": "files/20240831005057879_QFieldCamera20240831_0950575003225408333211468" }, "geometry": { "type": "Point", "coordinates": [ 126.94754, -8.430208333333344 ] } },
-{ "type": "Feature", "properties": { "id": 20, "Name": "Pairara Lupurara", "Dist": "Kesin", "Desc": null, "Photo": "files/20240831012343615_QFieldCamera20240831_1023436227274660816518952" }, "geometry": { "type": "Point", "coordinates": [ 126.947471666666672, -8.430193333333333 ] } },
+{ "type": "Feature", "properties": { "id": 20, "Name": "Pairara Lupurara", "Dist": "Kesin", "Desc": null, "Photo": "pic1.jpg" }, "geometry": { "type": "Point", "coordinates": [ 126.947471666666672, -8.430193333333333 ] } },
 { "type": "Feature", "properties": { "id": 21, "Name": "Track", "Dist": null, "Desc": null, "Photo": null }, "geometry": { "type": "Point", "coordinates": [ 126.94935, -8.431303333333346 ] } },
 { "type": "Feature", "properties": { "id": 22, "Name": "Track", "Dist": null, "Desc": null, "Photo": null }, "geometry": { "type": "Point", "coordinates": [ 126.949758333333349, -8.431855 ] } },
 { "type": "Feature", "properties": { "id": 23, "Name": "Track", "Dist": null, "Desc": null, "Photo": null }, "geometry": { "type": "Point", "coordinates": [ 126.950811666666624, -8.433258333333329 ] } },
@@ -40,6 +40,6 @@
 { "type": "Feature", "properties": { "id": 34, "Name": "Track", "Dist": null, "Desc": null, "Photo": null }, "geometry": { "type": "Point", "coordinates": [ 126.9487, -8.436935 ] } },
 { "type": "Feature", "properties": { "id": 35, "Name": "Track", "Dist": null, "Desc": null, "Photo": null }, "geometry": { "type": "Point", "coordinates": [ 126.948655, -8.43713 ] } },
 { "type": "Feature", "properties": { "id": 36, "Name": "Track", "Dist": null, "Desc": null, "Photo": null }, "geometry": { "type": "Point", "coordinates": [ 126.948531666666668, -8.438008333333332 ] } },
-{ "type": "Feature", "properties": { "id": 37, "Name": "Track", "Dist": null, "Desc": null, "Photo": null }, "geometry": { "type": "Point", "coordinates": [ 126.947876666666616, -8.438431666666663 ] } }
+{ "type": "Feature", "properties": { "id": 37, "Name": "Track", "Dist": null, "Desc": null, "Photo": "pic1.jpg" }, "geometry": { "type": "Point", "coordinates": [ 126.947876666666616, -8.438431666666663 ] } }
 ]
 }
