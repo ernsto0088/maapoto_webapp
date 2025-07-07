@@ -21,7 +21,7 @@
 { "type": "Feature", "properties": { "id": 15, "Name": "Track", "Dist": null, "Desc": null, "Photo": null }, "geometry": { "type": "Point", "coordinates": [ 126.949182183268817, -8.430996938470663 ] } },
 { "type": "Feature", "properties": { "id": 16, "Name": "Lata O'O Asauru", "Dist": "Kesin", "Desc": null, "Photo": "files/20240831003404501_QFieldCamera20240831_0934042224512784286645259" }, "geometry": { "type": "Point", "coordinates": [ 126.948108333333337, -8.430363333333332 ] } },
 { "type": "Feature", "properties": { "id": 17, "Name": "Lata O'O pairara", "Dist": "Kesin", "Desc": null, "Photo": null }, "geometry": { "type": "Point", "coordinates": [ 126.948055, -8.430325 ] } },
-{ "type": "Feature", "properties": { "id": 18, "Name": "Lata Pairara", "Dist": "Kesin", "Desc": null, "Photo": null }, "geometry": { "type": "Point", "coordinates": [ 126.947495, -8.430166666666667 ] } },
+{ "type": "Feature", "properties": { "id": 18, "Name": "Lata Pairara", "Dist": "Kesin", "Desc": null, "Photo": "pics/pic3.jpg" }, "geometry": { "type": "Point", "coordinates": [ 126.947495, -8.430166666666667 ] } },
 { "type": "Feature", "properties": { "id": 19, "Name": "Pairara", "Dist": "Kesin", "Desc": null, "Photo": "pics/pic1.jpg" }, "geometry": { "type": "Point", "coordinates": [ 126.94754, -8.430208333333344 ] } },
 { "type": "Feature", "properties": { "id": 20, "Name": "Pairara Lupurara", "Dist": "Kesin", "Desc": null, "Photo": "pics/pic2.jpg" }, "geometry": { "type": "Point", "coordinates": [ 126.947471666666672, -8.430193333333333 ] } },
 { "type": "Feature", "properties": { "id": 21, "Name": "Track", "Dist": null, "Desc": null, "Photo": null }, "geometry": { "type": "Point", "coordinates": [ 126.94935, -8.431303333333346 ] } },
