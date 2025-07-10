@@ -95,6 +95,46 @@
         L.control.layers(baseMaps, overlayMaps).addTo(map);
     });
 
+    // Create a control to display coordinates
+var coordControl = L.control({position: 'bottomleft'});
+
+coordControl.onAdd = function (map) {
+    this._div = L.DomUtil.create('div', 'coord-control');
+    this.update();
+    return this._div;
+};
+
+coordControl.update = function (latlng, center) {
+    this._div.innerHTML = 
+        "<b>Mouse:</b> " + (latlng ? latlng.lat.toFixed(5) + ", " + latlng.lng.toFixed(5) : "--, --") +
+        "<br><b>Center:</b> " + map.getCenter().lat.toFixed(5) + ", " + map.getCenter().lng.toFixed(5);
+};
+
+coordControl.addTo(map);
+
+// Update on mousemove
+map.on('mousemove', function(e) {
+    coordControl.update(e.latlng, map.getCenter());
+});
+
+// Update on moveend (when map center changes)
+map.on('moveend', function() {
+    coordControl.update(null, map.getCenter());
+});
+
+// Add some basic style
+var style = document.createElement('style');
+style.innerHTML = `
+.coord-control {
+    background: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+}
+`;
+document.head.appendChild(style);
+
 
     </script>
     
